@@ -36,6 +36,7 @@
     "tsup": "^5.11.11"
   },
   "devDependencies": {
-    "@jest/types": "^27.4.2"
+    "@jest/types": "^27.4.2",
+    "tslib": "^2.4.0"
   }
 }
