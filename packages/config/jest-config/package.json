@@ -1,47 +1,47 @@
 {
-  "name": "@atmosfera/prettier-config",
+  "name": "@atmosfera/jest-config",
   "version": "0.0.1",
-  "description": "Prettier Config",
-  "type": "module",
-  "sideEffects": false,
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
-  "author": "Lucas Bueno <bueno@vulcanica.dev>",
-  "homepage": "https://github.com/buenolucas/atmosfera#readme",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/buenolucas/atmosfera.git"
+  "description": "Jest Config",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "access": "public"
   },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/esm/index.js",
   "files": [
     "dist",
     "README.md",
     "src"
   ],
-  "publishConfig": {
-    "access": "public"
+  "keywords": [],
+  "author": "Lucas Bueno <bueno@vulcanica.dev>",
+  "homepage": "https://github.com/buenolucas/atmosfera#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buenolucas/atmosfera.git"
   },
   "scripts": {
+    "test": "jest",
     "build": "tsup-node",
     "dev": "tsup-node --watch",
-    "---": "",
     "clean": "rm -rf .turbo && rm -rf dist",
     "clean:install": "pnpm run clean && rm -rf node_modules",
     "copy": "mkdir -p ./dist && ./scripts/copy.sh",
-    "--- ": "",
     "lint:eslint": "eslint ./src --ext cjs,js,jsx,mjs,ts,tsx --max-warnings=0",
     "lint:prettier": "prettier \"./src/**/*.{cjs,js,jsx,mjs,ts,tsx,json,md,mdx,css,html,yml,yaml,scss}\" --ignore-unknown --loglevel warn",
     "lint": "pnpm run lint:prettier --check && pnpm run lint:eslint",
-    "lint:fix": "pnpm run lint:eslint --fix && pnpm run lint:prettier --write",
-    "---  ": ""
+    "lint:fix": "pnpm run lint:eslint --fix && pnpm run lint:prettier --write"
   },
   "dependencies": {
     "@atmosfera/config-creator": "workspace:*",
-    "prettier": "^2.7.1"
+    "@swc/core": "^1.2.209",
+    "@swc/jest": "^0.2.21",
+    "jest": "^28.0.3"
   },
   "devDependencies": {
     "@atmosfera/ts-config": "workspace:*",
-    "@atmosfera/tsup-config": "workspace:*"
+    "@atmosfera/tsup-config": "workspace:*",
+    "@types/jest": "^28.1.4"
   }
 }
