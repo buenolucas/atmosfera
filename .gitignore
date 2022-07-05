@@ -1,33 +1,38 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# Build Outputs -------------
+.cache
+.dist
+.next
+.vercel
+dist
+out
+# Webpack Analyzer ----------
+bundles
+# Packages ------------------
 node_modules
-.pnp
-.pnp.js
-
-# testing
-coverage
-
-# next.js
-.next/
-out/
-build
-
-# misc
-.DS_Store
+# Folders -------------------
+.idea
+binaries/
+coverage/
+# Files ---------------------
+# Logs ----------------------
+*.log
+# Local SSL -----------------
 *.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# turbo
+# Misc ----------------------
+.DS_Store
+.note
+.backup
+.todo
+# Custom --------------------
+.env
+.env.*
+!.env.example
+vercel-required.json
+vercel-secrets.json
+!vercel-secrets.example.json
+size-snapshot.json
+release
+tsconfig.tsbuildinfo
 .turbo
+.tsbuildinfo
+!.github/actions/release
