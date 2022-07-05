@@ -7,10 +7,10 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2020",
-    "outDir": "./dist"
+    "outDir": "dist"
     //"rootDir": "./src"
   },
   "extends": "@atmosfera/ts-config/node14.json",
-  "include": ["./"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }

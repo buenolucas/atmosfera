@@ -22,7 +22,7 @@
     },
     "test": {
       "outputs": ["coverage/**"],
-      "dependsOn": ["lint", "build"]
+      "dependsOn": ["build"]
     }
   }
 }

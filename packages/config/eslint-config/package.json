@@ -11,7 +11,15 @@
     "type": "git",
     "url": "git+https://github.com/buenolucas/atmosfera.git"
   },
-  "files": [],
+  "main": "index.cjs",
+  "files": [
+    "index.cjs",
+    "base.cjs",
+    "jest.cjs",
+    "next.cjs",
+    "react.cjs",
+    "typescript.cjs"
+  ],
   "publishConfig": {
     "access": "public"
   },

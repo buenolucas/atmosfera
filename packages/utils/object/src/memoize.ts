@@ -9,7 +9,7 @@ export const memoize = (fn: Get) => {
   const cache = new WeakMap();
 
   const memoizedFn: Get = (obj, path, fallback, index) => {
-    if (typeof obj === "undefined") {
+    if (typeof obj === 'undefined') {
       return fn(obj, path, fallback);
     }
 

@@ -1,4 +1,4 @@
-import type { Dict } from "@nafeira/types-util";
+import type { Dict } from '@atmosfera/types-util';
 export function split<T extends Dict, K extends keyof T>(object: T, keys: K[]) {
   const picked: Dict = {};
   const omitted: Dict = {};

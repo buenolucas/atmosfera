@@ -22,7 +22,6 @@
     "url": "git+https://github.com/buenolucas/atmosfera.git"
   },
   "scripts": {
-    "test": "jest",
     "build": "tsup-node",
     "dev": "tsup-node --watch",
     "clean": "rm -rf .turbo && rm -rf dist",

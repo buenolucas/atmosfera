@@ -1,1 +1,1 @@
-export { default as mergeWith } from "lodash.mergewith";
+export { default as mergeWith } from 'lodash.mergewith';
