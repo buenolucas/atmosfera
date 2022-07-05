@@ -1,4 +1,11 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+#!/bin/sh
 
-pnpm test
+[ -n "$CI" ] && exit 0
+. "$(dirname "$0")/_/husky.sh"
+
+if ps -o args= $PPID | grep -E -q ' --no-verify| -n | -n$' ; then
+:
+else
+:
+    pnpm lint-staged
+fi

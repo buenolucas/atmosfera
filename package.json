@@ -13,13 +13,17 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@atmosfera/commitlint-config": "workspace:*",
     "@atmosfera/eslint-config": "workspace:*",
+    "@atmosfera/lintstaged-config": "workspace:*",
     "@atmosfera/prettier-config": "workspace:*",
     "@atmosfera/ts-config": "workspace:*",
+    "@commitlint/cli": "^17.0.3",
+    "husky": "^8.0.0",
+    "lint-staged": "^12.4.1",
     "tsup": "6.1.3",
     "turbo": "latest",
-    "typescript": "^4.5.3",
-    "husky": "^8.0.0"
+    "typescript": "^4.5.3"
   },
   "engines": {
     "npm": ">=7.0.0",

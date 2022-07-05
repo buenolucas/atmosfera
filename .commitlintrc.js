@@ -1,3 +1,3 @@
-const { commitlintConfig } = require('@atmosfera/config');
+const { commitlintConfig } = require('@atmosfera/commitlint-config')
 
-module.exports = commitlintConfig();
+module.exports = commitlintConfig()

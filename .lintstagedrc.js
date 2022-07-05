@@ -1,3 +1,3 @@
-const { lintstagedConfig } = require('@atmosfera/config');
+const { lintStagedConfig } = require('@atmosfera/lintstaged-config')
 
-module.exports = lintstagedConfig();
+module.exports = lintStagedConfig()
