@@ -1,5 +1,6 @@
 packages:
   #- "apps/*"
   #- "labs/*"
-  - "packages/config/*"
-  - "packages/core/*"
+  - 'packages/config/*'
+  - 'packages/utils/*'
+  - 'packages/core/*'

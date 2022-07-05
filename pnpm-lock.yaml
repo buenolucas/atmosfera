@@ -89,6 +89,14 @@ importers:
     devDependencies:
       '@atmosfera/ts-config': link:../../config/typescript-config
 
+  packages/utils/types:
+    specifiers:
+      '@atmosfera/ts-config': workspace:*
+      '@atmosfera/tsup-config': workspace:*
+    devDependencies:
+      '@atmosfera/ts-config': link:../../config/typescript-config
+      '@atmosfera/tsup-config': link:../../config/tsup-config
+
 packages:
 
   /@ampproject/remapping/2.2.0:
