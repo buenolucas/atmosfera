@@ -89,6 +89,21 @@ importers:
     devDependencies:
       '@atmosfera/ts-config': link:../../config/typescript-config
 
+  packages/utils/object:
+    specifiers:
+      '@atmosfera/ts-config': workspace:*
+      '@atmosfera/tsup-config': workspace:*
+      '@atmosfera/types-util': workspace:*
+      '@types/lodash.mergewith': ^4.6.7
+      lodash.mergewith: ^4.6.2
+    dependencies:
+      '@atmosfera/types-util': link:../types
+      lodash.mergewith: 4.6.2
+    devDependencies:
+      '@atmosfera/ts-config': link:../../config/typescript-config
+      '@atmosfera/tsup-config': link:../../config/tsup-config
+      '@types/lodash.mergewith': 4.6.7
+
   packages/utils/types:
     specifiers:
       '@atmosfera/ts-config': workspace:*
@@ -1034,6 +1049,16 @@ packages:
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: false
+
+  /@types/lodash.mergewith/4.6.7:
+    resolution: {integrity: sha512-3m+lkO5CLRRYU0fhGRp7zbsGi6+BZj0uTVSwvcKU+nSlhjA9/QRNfuSGnD2mX6hQA7ZbmcCkzk5h4ZYGOtk14A==}
+    dependencies:
+      '@types/lodash': 4.14.182
+    dev: true
+
+  /@types/lodash/4.14.182:
+    resolution: {integrity: sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==}
+    dev: true
 
   /@types/minimatch/3.0.5:
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
@@ -3843,6 +3868,10 @@ packages:
 
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+    dev: false
+
+  /lodash.mergewith/4.6.2:
+    resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
     dev: false
 
   /lodash.sortby/4.7.0:
