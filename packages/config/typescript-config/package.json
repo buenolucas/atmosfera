@@ -18,7 +18,7 @@
     "base.json",
     "jest.json",
     "node14.json",
-    "nextjs.json",
+    "next.json",
     "README.md",
     "react-library.json",
     "react-native.json",
