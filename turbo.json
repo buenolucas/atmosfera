@@ -1,14 +1,28 @@
 {
+  "baseBranch": "origin/main",
   "pipeline": {
     "build": {
+      "outputs": ["dist/**", ".next/**"],
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
+      "inputs": ["src/**", "*.cjs", "package.json"]
     },
-    "lint": {
-      "outputs": []
+    "clean": {
+      "cache": false
     },
     "dev": {
       "cache": false
+    },
+    "lint": {
+      "dependsOn": [],
+      "inputs": ["src/**", "*.cjs", "package.json"]
+    },
+    "lint:fix": {
+      "cache": false,
+      "dependsOn": []
+    },
+    "test": {
+      "outputs": ["coverage/**"],
+      "dependsOn": ["lint", "build"]
     }
   }
 }

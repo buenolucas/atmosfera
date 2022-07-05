@@ -1,0 +1,32 @@
+{
+  "name": "@atmosfera/ts-config",
+  "version": "0.0.1",
+  "description": "Typescript Config",
+  "type": "module",
+  "sideEffects": false,
+  "typings": "./dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "author": "Lucas Bueno <bueno@vulcanica.dev>",
+  "homepage": "https://github.com/buenolucas/atmosfera#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buenolucas/atmosfera.git"
+  },
+  "files": [
+    "base.json",
+    "jest.json",
+    "node14.json",
+    "nextjs.json",
+    "README.md",
+    "react-library.json",
+    "react-native.json",
+    "reac.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "dependencies": {}
+}
