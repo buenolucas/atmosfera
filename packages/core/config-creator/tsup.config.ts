@@ -19,6 +19,10 @@ export const defaultConfig: Options = {
    * Becomes difficult to debug if code is minified.
    */
   minify: false,
+  /**
+   * ?
+   */
+  target: ['node16'],
 };
 export default defineConfig({
   ...defaultConfig,
