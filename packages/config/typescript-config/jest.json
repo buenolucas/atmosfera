@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "@jeromefitz/tsconfig-jest",
+  "display": "@atomsfera/tsconfig-jest",
   "compilerOptions": {
     "baseUrl": "./",
     "rootDir": "./"
