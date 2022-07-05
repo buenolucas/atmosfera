@@ -2,6 +2,8 @@ import type { Options } from 'tsup';
 
 import { configCreator } from '@atmosfera/config-creator';
 
+export type TSUpConfigOptions = Options;
+
 export const defaultConfig: Options = {
   clean: true,
   dts: true,
