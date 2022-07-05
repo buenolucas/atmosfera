@@ -1,4 +1,4 @@
-import { configCreator } from '@atmosfera/config-creator';
+import { configCreator } from '@atmosfera/config-creator'
 
 /*
  * For a detailed explanation regarding each configuration property and type check, visit:
@@ -15,6 +15,6 @@ export const defaultConfig = {
   fakeTimers: {
     enableGlobally: true,
   },
-};
+}
 
-export const jestConfig = configCreator<any>(defaultConfig);
+export const jestConfig = configCreator<any>(defaultConfig)

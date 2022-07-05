@@ -1,9 +1,3 @@
-//const { prettierConfig } = require('@atmosfera/config');
+const { prettierConfig } = require('@atmosfera/prettier-config');
 
-module.exports = {
-  arrowParens: 'always',
-  printWidth: 80,
-  semi: true,
-  singleQuote: true,
-  trailingComma: 'es5',
-};
+module.exports = prettierConfig();

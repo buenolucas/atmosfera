@@ -1,7 +1,7 @@
 /**
  * https://prettier.io/docs/en/configuration.html#sharing-configurations
  */
-import { configCreator } from '@atmosfera/config-creator';
+import { configCreator } from '@atmosfera/config-creator'
 
 export const defaultConfig: any = {
   arrowParens: 'always',
@@ -9,6 +9,6 @@ export const defaultConfig: any = {
   semi: false,
   singleQuote: true,
   trailingComma: 'es5',
-};
+}
 
-export const prettierConfig = configCreator(defaultConfig);
+export const prettierConfig = configCreator(defaultConfig)

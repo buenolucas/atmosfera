@@ -1,3 +1,3 @@
-import { tsupConfig } from './src';
+import { tsupConfig } from './src'
 
-export const tsup = tsupConfig();
+export const tsup = tsupConfig()

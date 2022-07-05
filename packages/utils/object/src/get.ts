@@ -11,12 +11,12 @@ export function get(
   fallback?: any,
   index?: number
 ) {
-  const key = typeof path === 'string' ? path.split('.') : [path];
+  const key = typeof path === 'string' ? path.split('.') : [path]
 
   for (index = 0; index < key.length; index += 1) {
-    if (!obj) break;
-    obj = obj[key[index]];
+    if (!obj) break
+    obj = obj[key[index]]
   }
 
-  return obj === undefined ? fallback : obj;
+  return obj === undefined ? fallback : obj
 }

@@ -1,1 +1,1 @@
-export * from './jest-config';
+export * from './jest-config'

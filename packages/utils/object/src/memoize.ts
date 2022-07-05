@@ -3,35 +3,35 @@ export type Get = (
   path: string | number,
   fallback?: any,
   index?: number
-) => any;
+) => any
 
 export const memoize = (fn: Get) => {
-  const cache = new WeakMap();
+  const cache = new WeakMap()
 
   const memoizedFn: Get = (obj, path, fallback, index) => {
     if (typeof obj === 'undefined') {
-      return fn(obj, path, fallback);
+      return fn(obj, path, fallback)
     }
 
     if (!cache.has(obj)) {
-      cache.set(obj, new Map());
+      cache.set(obj, new Map())
     }
 
-    const map = cache.get(obj);
+    const map = cache.get(obj)
 
     if (map.has(path)) {
-      return map.get(path);
+      return map.get(path)
     }
 
-    const value = fn(obj, path, fallback, index);
+    const value = fn(obj, path, fallback, index)
 
-    map.set(path, value);
+    map.set(path, value)
 
-    return value;
-  };
+    return value
+  }
 
-  return memoizedFn;
-};
+  return memoizedFn
+}
 
 // export const memoizedGet = memoize(get);
 

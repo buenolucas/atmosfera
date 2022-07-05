@@ -1,8 +1,8 @@
-import type { Options } from 'tsup';
+import type { Options } from 'tsup'
 
-import { configCreator } from '@atmosfera/config-creator';
+import { configCreator } from '@atmosfera/config-creator'
 
-export type TSUpConfigOptions = Options;
+export type TSUpConfigOptions = Options
 
 export const defaultConfig: Options = {
   clean: true,
@@ -21,6 +21,6 @@ export const defaultConfig: Options = {
    *
    */
   target: ['node16'],
-};
+}
 
-export const tsupConfig = configCreator(defaultConfig);
+export const tsupConfig = configCreator(defaultConfig)

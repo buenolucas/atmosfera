@@ -1,8 +1,8 @@
 // import isCI from 'is-ci'
-import { defineConfig } from "tsup";
-import type { Options } from "tsup";
-import pkg from "./package.json";
-import { config as _config } from "../../../tsup.config";
+import { defineConfig } from 'tsup'
+import type { Options } from 'tsup'
+import pkg from './package.json'
+import { config as _config } from '../../../tsup.config'
 
 /**
  * @note
@@ -19,7 +19,7 @@ import { config as _config } from "../../../tsup.config";
  *
  */
 const entry = [
-  "src/index.ts",
+  'src/index.ts',
   // 'src/components/Card/Show.tsx',
   // 'src/components/Hero/HeroImage.tsx',
   // 'src/custom/Emoji/index.ts',
@@ -31,7 +31,7 @@ const entry = [
   // //
   // 'src/components/**',
   // '!src/components/**/*.md',
-];
+]
 
 /**
  * @todo(tsup) tsup-node does this automatically we can remove
@@ -40,7 +40,7 @@ const external = [
   ...Object.keys(pkg.dependencies || {}),
   ...Object.keys(pkg.devDependencies || {}),
   ...Object.keys(pkg.peerDependencies || {}),
-];
+]
 
 const config: Options = {
   ..._config,
@@ -49,9 +49,9 @@ const config: Options = {
   minify: true,
   splitting: true,
   format: [],
-  tsconfig: "tsconfig.json",
-};
+  tsconfig: 'tsconfig.json',
+}
 
 export default defineConfig({
   ...config,
-});
+})

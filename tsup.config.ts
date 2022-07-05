@@ -2,8 +2,8 @@
  * @ref(tsup) https://tsup.egoist.sh
  *
  */
-import { defineConfig } from 'tsup';
-import type { Options } from 'tsup';
+import { defineConfig } from 'tsup'
+import type { Options } from 'tsup'
 
 const config: Options = {
   clean: false,
@@ -19,7 +19,7 @@ const config: Options = {
   splitting: false,
   treeshake: false,
   target: ['node16'],
-};
+}
 
-export { config };
-export default defineConfig({ ...config });
+export { config }
+export default defineConfig({ ...config })

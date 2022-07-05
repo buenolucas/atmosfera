@@ -1,1 +1,1 @@
-export * from './lint-staged-config';
+export * from './lint-staged-config'

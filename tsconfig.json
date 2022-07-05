@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noImplicitAny": false,
+    "noEmit": true
+  },
+  "extends": "@atmosfera/ts-config/node14.json",
+  "exclude": []
+}

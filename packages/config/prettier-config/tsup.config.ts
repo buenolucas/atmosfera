@@ -1,13 +1,13 @@
 // import isCI from 'is-ci'
 
-import { tsupConfig, TSUpConfigOptions } from '@atmosfera/tsup-config';
+import { tsupConfig, TSUpConfigOptions } from '@atmosfera/tsup-config'
 
-const entry = ['src/index.ts'];
+const entry = ['src/index.ts']
 
 /**
  * @todo(tsup) tsup-node does this automatically we can remove
  */
-const external = [];
+const external = []
 
 const config: TSUpConfigOptions = {
   entry,
@@ -15,8 +15,8 @@ const config: TSUpConfigOptions = {
   minify: true,
   splitting: true,
   tsconfig: 'tsconfig.json',
-};
+}
 
 export default tsupConfig({
   ...config,
-});
+})
