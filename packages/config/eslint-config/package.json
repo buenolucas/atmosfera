@@ -1,6 +1,6 @@
 {
   "name": "@atmosfera/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Eslint Config",
   "type": "module",
   "sideEffects": false,
@@ -25,6 +25,7 @@
   },
   "scripts": {},
   "dependencies": {
+    "@atmosfera/eslint-config": "link:",
     "@babel/eslint-parser": "7.18.2",
     "@typescript-eslint/eslint-plugin": "5.30.0",
     "@typescript-eslint/parser": "5.30.0",
